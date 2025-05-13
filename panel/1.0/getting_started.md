@@ -267,3 +267,9 @@ software is being used. To learn more about this feature and to opt-out, please 
 documentation. Make sure to continue with the rest of the installation process.
 
 #### Next Step: [Webserver Configuration](./webserver_configuration)
+
+# Remember to change 'yourPassword' below to be a unique password
+CREATE USER 'pterodactyl'@'127.0.0.1' IDENTIFIED BY 'yourPassword';argus
+CREATE DATABASE panel;
+GRANT ALL PRIVILEGES ON panel.* TO 'pterodactyl'@'127.0.0.1' WITH GRANT OPTION;
+exit
